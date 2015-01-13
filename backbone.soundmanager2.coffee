@@ -213,6 +213,8 @@ class BackboneSoundManager2
         onpause      : => @trigger "paused",      @sound
         onresume     : => @trigger "resumed",     @sound
         onstop       : => @trigger "stopped",     @sound
+        onconnect    : => @trigger "connected",   @sound
+        onid3        : => @trigger "id3data",     @sound
         whileplaying : => @trigger "playing",     @sound
         whileloading : => @trigger "bytesLoaded", @sound
 

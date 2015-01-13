@@ -149,6 +149,12 @@
             onstop: function() {
               return _this.trigger("stopped", _this.sound);
             },
+            onconnect: function() {
+              return _this.trigger("connected", _this.sound);
+            },
+            onid3: function() {
+              return _this.trigger("id3data", _this.sound);
+            },
             whileplaying: function() {
               return _this.trigger("playing", _this.sound);
             },
