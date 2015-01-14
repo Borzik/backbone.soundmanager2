@@ -301,6 +301,15 @@ class BackboneSoundManager2
       @stop()
       @load playable
 
+  # Start playing the current sound.
+  #
+  # Examples
+  #
+  #   player.play() # => track will start playing
+
+  play: ->
+    return if ! @sound? or  @getState is 'playing'
+    @sound.play()
 
   # Stop for the current sound.
   #

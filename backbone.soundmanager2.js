@@ -214,6 +214,13 @@
       }
     };
 
+    BackboneSoundManager2.prototype.play = function() {
+      if ((this.sound == null) || this.getState === 'playing') {
+        return;
+      }
+      return this.sound.play();
+    };
+
     BackboneSoundManager2.prototype.stop = function() {
       if (this.sound == null) {
         return;
