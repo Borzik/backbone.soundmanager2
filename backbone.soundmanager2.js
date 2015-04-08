@@ -101,7 +101,7 @@
     };
 
     BackboneSoundManager2.prototype.isPlayable = function(playable) {
-      return (playable.id != null) && (playable.getAudioURL != null);
+      return playable.getAudioURL != null;
     };
 
     BackboneSoundManager2.prototype.ok = function() {

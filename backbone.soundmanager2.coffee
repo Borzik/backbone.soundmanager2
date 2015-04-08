@@ -160,7 +160,7 @@ class BackboneSoundManager2
   # Returns boolean.
 
   isPlayable: (playable) ->
-    playable.id? and playable.getAudioURL?
+    playable.getAudioURL?
 
 
   ok: ->
